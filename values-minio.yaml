@@ -635,7 +635,7 @@ service:
   ## This can be used to set the LoadBalancer service type to internal only.
   ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#internal-load-balancer
   ##
-  annotations: {}
+  annotations: { networking.gke.io/load-balancer-type: "Internal" }
 ## Configure the ingress resource that allows you to access the
 ## MinIO&reg; Console. Set up the URL
 ## ref: https://kubernetes.io/docs/user-guide/ingress/
