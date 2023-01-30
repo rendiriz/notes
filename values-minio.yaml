@@ -676,7 +676,7 @@ ingress:
   ##   kubernetes.io/ingress.class: nginx
   ##   cert-manager.io/cluster-issuer: cluster-issuer-name
   ##
-  annotations: { cert-manager.io/cluster-issuer: "letsencrypt-prod" }
+  annotations: { cert-manager.io/cluster-issuer: "letsencrypt-staging" }
   ## @param ingress.tls Enable TLS configuration for the hostname defined at `ingress.hostname` parameter
   ## TLS certificates will be retrieved from a TLS secret with name: `{{- printf "%s-tls" .Values.ingress.hostname }}`
   ## You can:
@@ -785,7 +785,7 @@ apiIngress:
   ##   kubernetes.io/ingress.class: nginx
   ##   cert-manager.io/cluster-issuer: cluster-issuer-name
   ##
-  annotations: { cert-manager.io/cluster-issuer: "letsencrypt-prod" }
+  annotations: { cert-manager.io/cluster-issuer: "letsencrypt-staging" }
   ## @param apiIngress.tls Enable TLS configuration for the hostname defined at `apiIngress.hostname` parameter
   ## TLS certificates will be retrieved from a TLS secret with name: `{{- printf "%s-tls" .Values.apiIngress.hostname }}`
   ## You can:
